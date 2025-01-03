@@ -35,6 +35,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	mix-blend-mode: difference;
+	z-index: 5;
 }
 
 .logo-img {
