@@ -1,0 +1,23 @@
+@import 'reset.css';
+
+:root {
+	--main-font: 'Anton', serif;
+	--secondary-font: 'Roboto', serif;
+	/* 다른 변수도 추가 */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-width: none;
+	font-family: var(--main-font);
+}
+
+body {
+	background-color: #fff;
+}
+
+.scroll::-webkit-scrollbar {
+	display: none;
+}
