@@ -3,7 +3,6 @@
 :root {
 	--main-font: 'Anton', serif;
 	--secondary-font: 'Roboto', serif;
-	/* 다른 변수도 추가 */
 }
 
 ::selection {
@@ -27,7 +26,7 @@ body {
 	display: none;
 }
 
-.header-container {
+.header-wrapper {
 	width: 100%;
 	height: auto;
 	padding: 20px 50px;
@@ -39,25 +38,25 @@ body {
 	z-index: 5;
 }
 
-.logo-img {
+.logo {
 	height: 120px;
 	cursor: pointer;
 }
 
-.icon-nav {
+.icon-menu {
 	display: flex;
 	gap: 35px;
 }
 
-.icon-nav > button > img {
+.icon-menu > button > img {
 	height: 30px;
 	cursor: pointer;
 }
 
-.product {
+.main-wrapper {
 	position: relative;
 	height: 1000vh; /* 임시 높이 */
-	padding-top: 160px;
+	padding: 160px 100px 0px 100px;
 	z-index: 0;
 }
 
