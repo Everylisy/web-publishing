@@ -181,3 +181,36 @@ body {
 .sort-list a:hover {
 	text-decoration: underline;
 }
+
+.pagination-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 26px;
+	padding: 20px 0 20px;
+}
+
+.pagination-number-list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.pagination-number-list li {
+	font-family: var(--secondary-font);
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.pagination-number-list li > a:hover {
+	text-decoration: underline;
+}
+
+.current-page a {
+	border-bottom: 1px solid black;
+}
+
+.prev-button img,
+.next-button img {
+	width: 12px;
+}
