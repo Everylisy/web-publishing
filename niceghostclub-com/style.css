@@ -73,3 +73,55 @@ body {
 .category li:hover {
 	border-bottom: 4px solid black;
 }
+
+.product-wrapper {
+	padding-top: 50px;
+}
+
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product {
+	width: 25%;
+	height: auto;
+	position: relative;
+	padding-bottom: 60px;
+}
+
+.product-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.product-img-back {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 0;
+}
+
+.product:hover .product-img {
+	opacity: 0;
+}
+
+.product:hover .product-img-back {
+	opacity: 1;
+}
+
+.product-desc {
+	font-family: var(--secondary-font);
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.discount-price {
+	text-decoration-line: line-through;
+}
