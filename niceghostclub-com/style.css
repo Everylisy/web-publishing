@@ -2,7 +2,8 @@
 
 :root {
 	--main-font: 'Anton', serif;
-	--secondary-font: 'Roboto', serif;
+	--secondary-font: 'Roboto';
+	--tertiary-font: 'Noto Sans KR', serif;
 }
 
 ::selection {
@@ -128,4 +129,55 @@ body {
 
 .discount-price {
 	text-decoration-line: line-through;
+}
+
+.sort-btn-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: end;
+	padding-top: 60px;
+}
+
+.sort-btn {
+	display: flex;
+	gap: 46px;
+	align-items: center;
+	padding: 0 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.sort-btn-icon {
+	height: 16px;
+}
+
+.sort-list-wrapper {
+	display: none;
+	position: absolute;
+	top: 96px;
+	right: 0;
+	width: 120px;
+	padding: 10px;
+	background-color: #fff;
+	z-index: 3;
+}
+
+.active {
+	display: block;
+}
+
+.sort-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.sort-list li {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.sort-list a:hover {
+	text-decoration: underline;
 }
