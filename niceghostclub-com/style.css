@@ -70,6 +70,10 @@ body {
 	text-transform: uppercase;
 }
 
+.category li {
+	border-bottom: 4px solid transparent;
+}
+
 .category li:hover {
 	border-bottom: 4px solid black;
 }
