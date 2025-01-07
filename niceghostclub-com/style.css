@@ -56,7 +56,7 @@ body {
 
 .main-wrapper {
 	position: relative;
-	height: 1000vh; /* 임시 높이 */
+	height: auto;
 	padding: 160px 100px 0px 100px;
 	z-index: 0;
 }
@@ -246,6 +246,5 @@ body {
 	flex-direction: column;
 	text-align: right;
 	font-size: 10px;
-
 	line-height: 1.6;
 }
