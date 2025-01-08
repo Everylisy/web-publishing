@@ -55,7 +55,6 @@ body {
 }
 
 .main-wrapper {
-	position: relative;
 	height: auto;
 	padding: 160px 100px 0px 100px;
 	z-index: 0;
@@ -135,14 +134,16 @@ body {
 	position: relative;
 	display: flex;
 	justify-content: end;
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 .sort-btn {
+	width: 120px;
+	height: auto;
 	display: flex;
-	gap: 46px;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 10px;
+	padding: 8px 10px;
 	font-size: 20px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -155,10 +156,10 @@ body {
 .sort-list-wrapper {
 	display: none;
 	position: absolute;
-	top: 96px;
+	top: 100%;
 	right: 0;
 	width: 120px;
-	padding: 10px;
+	padding: 18px 10px;
 	background-color: #fff;
 	z-index: 3;
 }
