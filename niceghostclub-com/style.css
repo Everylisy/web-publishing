@@ -54,10 +54,6 @@ body {
 	cursor: pointer;
 }
 
-.burger-btn {
-	position: relative;
-}
-
 .menu-close-btn {
 	display: none;
 }
