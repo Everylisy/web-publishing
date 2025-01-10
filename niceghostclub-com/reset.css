@@ -132,3 +132,13 @@ a {
 img {
 	display: block;
 }
+input, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	background: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
