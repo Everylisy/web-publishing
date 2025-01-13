@@ -40,7 +40,9 @@
 						</ul>
 					</div>
 				</button>
-				<button><img src="asset/icon/profile.svg" /></button>
+				<button class="profile-btn">
+					<img src="asset/icon/profile.svg" />
+				</button>
 				<button><img src="asset/icon/shopping-bag.svg" /></button>
 				<button class="burger-btn">
 					<img class="menu-open-btn" src="asset/icon/menu.svg" />
@@ -48,6 +50,30 @@
 				</button>
 			</nav>
 		</header>
+
+		<div class="popup-background"></div>
+		<div class="popup-wrapper">
+			<button class="popup-close-btn">
+				<img src="asset/icon/popup-close.svg" />
+			</button>
+			<div class="login-wrapper">
+				<h2>로그인</h2>
+				<form class="login-form" action="">
+					<input type="text" placeholder="아이디" />
+					<input type="password" placeholder="패스워드" />
+				</form>
+				<div class="find-btn-wrapper">
+					<a href="#">아이디찾기</a>
+					<span>/</span>
+					<a href="#">비밀번호찾기</a>
+				</div>
+				<div class="auth-btn-wrapper">
+					<button><a class="sign-in-btn" href="#">로그인</a></button>
+					<button><a class="sign-up-btn" ="#">회원가입</a></button>
+				</div>
+				<a class="order-check-btn">비회원 주문 조회</a>
+			</div>
+		</div>
 
 		<nav class="burger-menu-wrapper">
 			<ul class="burger-menu">

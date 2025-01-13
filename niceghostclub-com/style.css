@@ -121,6 +121,91 @@ body {
 	display: none;
 }
 
+.popup-background {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: lightgray;
+	opacity: 0.5;
+	z-index: 4;
+}
+
+.popup-wrapper {
+	display: none;
+	position: fixed;
+	right: 0;
+	width: 400px;
+	height: 100vh;
+	padding: 160px 50px 0;
+	color: #000;
+	background-color: #fff;
+	border-left: 1px solid black;
+	z-index: 4;
+}
+
+.popup-wrapper a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.popup-close-btn {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	padding-bottom: 24px;
+	cursor: pointer;
+}
+
+.popup-close-btn img {
+	height: 14px;
+}
+
+.login-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-size: 12px;
+	font-weight: 500;
+	font-family: var(--tertiary-font);
+}
+
+.login-form input {
+	width: 100%;
+	height: 50px;
+	padding: 0 10px;
+	font-weight: 600;
+	border-bottom: 1px solid black;
+}
+
+.find-btn-wrapper,
+.order-check-btn {
+	text-align: right;
+}
+
+.auth-btn-wrapper button {
+	width: 100%;
+	border: 1px solid black;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.auth-btn-wrapper a {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+}
+
+.sign-in-btn {
+	color: #fff;
+	background-color: #000;
+}
+
+.sign-up-btn {
+	color: #000;
+	background-color: #fff;
+}
+
 .burger-menu-wrapper {
 	display: none;
 	position: fixed;
