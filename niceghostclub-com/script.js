@@ -38,15 +38,13 @@ const closePopup = () => {
 	popupBackground.classList.remove(ACTIVE);
 };
 
-const openLoginTab = () => {
-	shoppingBagTab.classList.remove(ACTIVE);
-	loginTab.classList.add(ACTIVE);
+const toggleTab = (activeTab, inactiveTab) => {
+	inactiveTab.classList.remove(ACTIVE);
+	activeTab.classList.add(ACTIVE);
 };
 
-const openShoppingBagTab = () => {
-	loginTab.classList.remove(ACTIVE);
-	shoppingBagTab.classList.add(ACTIVE);
-};
+const openLoginTab = () => toggleTab(loginTab, shoppingBagTab);
+const openShoppingBagTab = () => toggleTab(shoppingBagTab, loginTab);
 
 sortBtn.addEventListener('click', clickSortBtn);
 burgerBtn.addEventListener('click', clickBurgerBtn);
