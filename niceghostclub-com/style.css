@@ -232,7 +232,7 @@ body {
 }
 
 .shopping-bag-outer-wrapper {
-	/* display: none; */
+	display: none;
 	height: 100%;
 }
 
