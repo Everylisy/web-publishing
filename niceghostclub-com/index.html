@@ -48,7 +48,10 @@
 				<button class="profile-btn">
 					<img src="asset/icon/profile.svg" alt="profile icon" />
 				</button>
-				<button>
+				<button class="shopping-bag-btn">
+					<div class="quantity-icon">
+						<p>1</p>
+					</div>
 					<img src="asset/icon/shopping-bag.svg" alt="shopping bag icon" />
 				</button>
 				<button class="burger-btn">
@@ -72,22 +75,72 @@
 				<img src="asset/icon/popup-close.svg" alt="popup close icon" />
 			</button>
 
-			<div class="login-wrapper">
-				<h2>로그인</h2>
-				<form class="login-form" action="">
-					<input type="text" placeholder="아이디" />
-					<input type="password" placeholder="패스워드" />
-				</form>
-				<div class="find-btn-wrapper">
-					<a href="#">아이디찾기</a>
-					<span>/</span>
-					<a href="#">비밀번호찾기</a>
+			<div class="login-outer-wrapper">
+				<div class="login-wrapper">
+					<h2>로그인</h2>
+					<form class="login-form" action="">
+						<input type="text" placeholder="아이디" />
+						<input type="password" placeholder="패스워드" />
+					</form>
+					<div class="find-btn-wrapper">
+						<a href="#">아이디찾기</a>
+						<span>/</span>
+						<a href="#">비밀번호찾기</a>
+					</div>
+					<div class="auth-btn-wrapper">
+						<button><a class="sign-in-btn" href="#">로그인</a></button>
+						<button><a class="sign-up-btn" ="#">회원가입</a></button>
+					</div>
+					<a class="order-check-btn">비회원 주문 조회</a>
 				</div>
-				<div class="auth-btn-wrapper">
-					<button><a class="sign-in-btn" href="#">로그인</a></button>
-					<button><a class="sign-up-btn" ="#">회원가입</a></button>
+			</div>
+
+			<div class="shopping-bag-outer-wrapper">
+				<div class="shopping-bag-wrapper">
+					<!-- <p class="bag-empty-message">장바구니가 비어 있습니다.</p> -->
+
+					<div class="bag-filled-wrapper">
+						<div class="bag-img-wrapper">
+							<a href="#" target="_blank">
+								<img
+									src="asset/img/basket-product.jpg"
+									alt="BUNNY BEAR DOLL KEY CHAIN [BLACK] img"
+								/>
+							</a>
+						</div>
+						<div class="bag-desc-wrapper">
+							<div class="bag-product-name">
+								<a href="#" target="_blank">
+									<span>
+										[1/20 PRE-ORDER]MONO BUNNY BEAR DOLL KEY CHAIN
+										<p>[BLACK]</p>
+									</span>
+								</a>
+							</div>
+							<div class="bag-price-wrapper">
+								<div>
+									<p>₩39,000</p>
+									<p>₩-7,800</p>
+								</div>
+								<a href="#"><p>Delete</p></a>
+							</div>
+							<p>[옵션: 블랙/F]</p>
+							<div class="bag-quantity-wrapper">
+								<img src="asset/icon/quantity-down.png" alt="" />
+								<p>1</p>
+								<img src="asset/icon/quantity-up.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="checkout-wrapper">
+						<div class="total-price-wrapper">
+							<p>TOTAL</p>
+							<p>₩31,200</p>
+						</div>
+						<button class="checkout-btn"><a href="#">CHECKOUT</a></button>
+					</div>
 				</div>
-				<a class="order-check-btn">비회원 주문 조회</a>
 			</div>
 		</div>
 

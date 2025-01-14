@@ -117,6 +117,27 @@ body {
 	cursor: pointer;
 }
 
+.shopping-bag-btn {
+	position: relative;
+}
+
+.quantity-icon {
+	position: absolute;
+	bottom: 12px;
+	right: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 11px;
+	font-weight: 600;
+	color: black;
+	background: white;
+	font-family: var(--secondary-font);
+}
+
 .menu-close-btn {
 	display: none;
 }
@@ -137,10 +158,13 @@ body {
 	right: 0;
 	width: 400px;
 	height: 100vh;
-	padding: 160px 50px 0;
+	padding: 160px 50px 46px;
 	color: #000;
 	background-color: #fff;
 	border-left: 1px solid black;
+	font-size: 12px;
+	font-weight: 500;
+	font-family: var(--secondary-font), var(--tertiary-font);
 	z-index: 4;
 }
 
@@ -161,13 +185,14 @@ body {
 	height: 14px;
 }
 
+.login-outer-wrapper {
+	display: none;
+}
+
 .login-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-	font-size: 12px;
-	font-weight: 500;
-	font-family: var(--tertiary-font);
 }
 
 .login-form input {
@@ -204,6 +229,96 @@ body {
 .sign-up-btn {
 	color: #000;
 	background-color: #fff;
+}
+
+.shopping-bag-outer-wrapper {
+	/* display: none; */
+	height: 100%;
+}
+
+.shopping-bag-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bag-empty-message {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.bag-filled-wrapper {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+}
+
+.bag-img-wrapper {
+	width: 135px;
+}
+
+.bag-img-wrapper img {
+	width: 100%;
+}
+
+.bag-desc-wrapper {
+	width: calc(100% - 135px);
+	line-height: 1.6;
+}
+
+.bag-product-name {
+	white-space: nowrap;
+	overflow: auto;
+	scrollbar-width: auto;
+	height: auto;
+}
+
+.bag-price-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bag-quantity-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 5px 0;
+}
+
+.bag-quantity-wrapper img {
+	height: 24px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.checkout-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.total-price-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.checkout-btn {
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+	color: white;
+	font-size: 15px;
+}
+
+.checkout-btn a {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
 }
 
 .burger-menu-wrapper {
