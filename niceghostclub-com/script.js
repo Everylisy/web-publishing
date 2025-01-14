@@ -1,3 +1,6 @@
+const ACTIVE = 'active';
+const INACTIVE = 'inactive';
+
 const sortBtn = document.getElementById('sort-btn');
 const sortList = document.getElementById('sort-list-wrapper');
 
@@ -12,23 +15,23 @@ const popupBackground = document.querySelector('.popup-background');
 const popupCloseBtn = document.querySelector('.popup-close-btn');
 
 const clickSortBtn = () => {
-	sortList.classList.toggle('active');
+	sortList.classList.toggle(ACTIVE);
 };
 
 const clickBurgerBtn = () => {
-	menuOpenBtn.classList.toggle('inactive');
-	burgerMenu.classList.toggle('active');
-	menuCloseBtn.classList.toggle('active');
+	menuOpenBtn.classList.toggle(INACTIVE);
+	burgerMenu.classList.toggle(ACTIVE);
+	menuCloseBtn.classList.toggle(ACTIVE);
 };
 
 const openPopup = () => {
-	popup.classList.add('active');
-	popupBackground.classList.add('active');
+	popup.classList.add(ACTIVE);
+	popupBackground.classList.add(ACTIVE);
 };
 
 const closePopup = () => {
-	popup.classList.remove('active');
-	popupBackground.classList.remove('active');
+	popup.classList.remove(ACTIVE);
+	popupBackground.classList.remove(ACTIVE);
 };
 
 sortBtn.addEventListener('click', clickSortBtn);
