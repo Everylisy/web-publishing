@@ -36,6 +36,8 @@ const openPopup = () => {
 const closePopup = () => {
 	popup.classList.remove(ACTIVE);
 	popupBackground.classList.remove(ACTIVE);
+	loginTab.classList.remove(ACTIVE);
+	shoppingBagTab.classList.remove(ACTIVE);
 };
 
 const toggleTab = (activeTab, inactiveTab) => {
