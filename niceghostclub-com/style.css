@@ -159,8 +159,8 @@ body {
 	width: 400px;
 	height: 100vh;
 	padding: 160px 50px 46px;
-	color: #000;
-	background-color: #fff;
+	color: black;
+	background-color: white;
 	border-left: 1px solid black;
 	font-size: 12px;
 	font-weight: 500;
@@ -222,13 +222,13 @@ body {
 }
 
 .sign-in-btn {
-	color: #fff;
-	background-color: #000;
+	color: white;
+	background-color: black;
 }
 
 .sign-up-btn {
-	color: #000;
-	background-color: #fff;
+	color: black;
+	background-color: white;
 }
 
 .shopping-bag-outer-wrapper {
@@ -310,7 +310,7 @@ body {
 .checkout-btn {
 	width: 100%;
 	text-align: center;
-	background-color: #000;
+	background-color: black;
 	color: white;
 	font-size: 15px;
 }
@@ -328,7 +328,7 @@ body {
 	height: 100%;
 	padding: 180px 50px;
 	overflow: auto;
-	background-color: #fff;
+	background-color: white;
 	z-index: 3;
 }
 
@@ -449,7 +449,7 @@ body {
 	right: 0;
 	width: 120px;
 	padding: 18px 10px;
-	background-color: #fff;
+	background-color: white;
 	z-index: 3;
 }
 
