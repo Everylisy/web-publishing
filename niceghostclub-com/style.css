@@ -269,6 +269,7 @@ body {
 
 .bag-product-name {
 	white-space: nowrap;
+	text-overflow: ellipsis;
 	overflow: auto;
 	scrollbar-width: auto;
 	height: auto;
