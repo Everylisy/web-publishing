@@ -1,9 +1,6 @@
 const ACTIVE = 'active';
 const INACTIVE = 'inactive';
 
-const sortBtn = document.getElementById('sort-btn');
-const sortList = document.getElementById('sort-list-wrapper');
-
 const burgerBtn = document.querySelector('.burger-btn');
 const menuOpenBtn = document.querySelector('.menu-open-btn');
 const menuCloseBtn = document.querySelector('.menu-close-btn');
@@ -17,10 +14,6 @@ const popupCloseBtn = document.querySelector('.popup-close-btn');
 
 const loginTab = document.querySelector('.login-outer-wrapper');
 const shoppingBagTab = document.querySelector('.shopping-bag-outer-wrapper');
-
-const clickSortBtn = () => {
-	sortList.classList.toggle(ACTIVE);
-};
 
 const clickBurgerBtn = () => {
 	menuOpenBtn.classList.toggle(INACTIVE);
@@ -48,7 +41,6 @@ const toggleTab = (activeTab, inactiveTab) => {
 const openLoginTab = () => toggleTab(loginTab, shoppingBagTab);
 const openShoppingBagTab = () => toggleTab(shoppingBagTab, loginTab);
 
-sortBtn.addEventListener('click', clickSortBtn);
 burgerBtn.addEventListener('click', clickBurgerBtn);
 
 profileBtn.addEventListener('click', openPopup);
