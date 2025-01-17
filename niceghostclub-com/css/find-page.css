@@ -3,7 +3,7 @@
 	flex-direction: column;
 }
 
-.find-id-wrapper {
+.find-info-wrapper {
 	width: 650px;
 	padding: 160px 35px 55px;
 	margin: 0 auto;
@@ -12,18 +12,18 @@
 	font-weight: 500;
 }
 
-.find-id-wrapper h2 {
+.find-info-wrapper h2 {
 	font-size: 20px;
 	font-weight: 900;
 	text-align: center;
 	padding: 20px 0;
 }
 
-.find-id-wrapper p {
+.find-info-wrapper p {
 	padding: 14px 0;
 }
 
-.find-id-form-wrapper,
+.find-info-form-wrapper,
 .info-input-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -67,19 +67,19 @@
 	justify-content: space-between;
 }
 
-.id-find-btn {
+.info-find-btn {
 	width: 100%;
 	text-align: center;
 	color: white;
 	background-color: black;
 }
 
-.id-find-btn a {
+.info-find-btn a {
 	display: block;
 	width: 100%;
 	padding: 17px 0;
 }
 
-.id-find-btn a:hover {
+.info-find-btn a:hover {
 	text-decoration: underline;
 }
