@@ -34,8 +34,8 @@ const closePopup = () => {
 };
 
 const toggleTab = (activeTab, inactiveTab) => {
-	inactiveTab.classList.remove(ACTIVE);
 	activeTab.classList.add(ACTIVE);
+	inactiveTab.classList.remove(ACTIVE);
 };
 
 const openLoginTab = () => toggleTab(loginTab, shoppingBagTab);
@@ -48,3 +48,5 @@ profileBtn.addEventListener('click', openLoginTab);
 shoppingBagBtn.addEventListener('click', openPopup);
 shoppingBagBtn.addEventListener('click', openShoppingBagTab);
 popupCloseBtn.addEventListener('click', closePopup);
+
+export default toggleTab;
