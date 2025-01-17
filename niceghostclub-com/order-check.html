@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<!-- © 2025 NiceGhostClub. All design, code, and images are copyrighted by niceghostclub. -->
+	<!-- ※ This project is for educational purposes and is not for commercial use. -->
+	<!-- Address of the source page: https://niceghostclub.com/product/list.html?cate_no=101 -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>niceghostclub</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/find-page.css" />
+	</head>
+	<body>
+		<header class="header-wrapper">
+			<a href="index.html">
+				<img
+					class="logo"
+					src="asset/img/star_logo.png"
+					alt="niceghostclub star logo"
+			/></a>
+
+			<nav class="icon-nav">
+				<button class="serach-btn">
+					<img src="asset/icon/search.svg" alt="search icon" />
+					<div class="search">
+						<form class="search-bar" action="">
+							<input type="text" name="search-bar" />
+							<label for="search-bar">SEARCH</label>
+						</form>
+					</div>
+				</button>
+				<button class="globe-btn">
+					<img src="asset/icon/web.svg" alt="globe icon" />
+					<div class="language">
+						<ul class="language-list">
+							<li><a href="#">KOR</a></li>
+							<li><a href="#">USA</a></li>
+							<li><a href="#">CHN</a></li>
+							<li><a href="#">JPN</a></li>
+						</ul>
+					</div>
+				</button>
+				<button class="profile-btn">
+					<img src="asset/icon/profile.svg" alt="profile icon" />
+				</button>
+				<button class="shopping-bag-btn">
+					<!-- 장바구니에 상품이 있을 시 활성화 -->
+					<div class="quantity-icon">
+						<p>1</p>
+					</div>
+
+					<img src="asset/icon/shopping-bag.svg" alt="shopping bag icon" />
+				</button>
+				<button class="burger-btn">
+					<img
+						class="menu-open-btn"
+						src="asset/icon/menu.svg"
+						alt="menu icon"
+					/>
+					<img
+						class="menu-close-btn"
+						src="asset/icon/menu-close.svg"
+						alt="menu close icon"
+					/>
+				</button>
+			</nav>
+		</header>
+
+		<div class="popup-background"></div>
+		<div class="popup-wrapper">
+			<button class="popup-close-btn">
+				<img src="asset/icon/popup-close.svg" alt="popup close icon" />
+			</button>
+
+			<div class="login-outer-wrapper">
+				<div class="login-wrapper">
+					<h2>로그인</h2>
+					<form class="login-form" action="">
+						<input type="text" placeholder="아이디" />
+						<input type="password" placeholder="패스워드" />
+					</form>
+					<div class="find-btn-wrapper">
+						<a href="find-id.html">아이디찾기</a>
+						<span>/</span>
+						<a href="find-pw.html">비밀번호찾기</a>
+					</div>
+					<div class="auth-btn-wrapper">
+						<button><a class="sign-in-btn" href="#">로그인</a></button>
+						<button><a class="sign-up-btn" ="#">회원가입</a></button>
+					</div>
+					<a class="order-check-btn" href="order-check.html"
+						>비회원 주문 조회</a
+					>
+				</div>
+			</div>
+
+			<div class="shopping-bag-outer-wrapper">
+				<div class="shopping-bag-wrapper">
+					<!-- 장바구니에 상품이 없을 시 활성화 -->
+					<!-- <p class="bag-empty-message">장바구니가 비어 있습니다.</p> -->
+
+					<div class="bag-filled-wrapper">
+						<div class="bag-img-wrapper">
+							<a href="#" target="_blank">
+								<img
+									src="asset/img/basket-product.jpg"
+									alt="BUNNY BEAR DOLL KEY CHAIN [BLACK] img"
+								/>
+							</a>
+						</div>
+						<div class="bag-desc-wrapper">
+							<div class="bag-product-name">
+								<a href="#" target="_blank">
+									<span>
+										[1/20 PRE-ORDER]MONO BUNNY BEAR DOLL KEY CHAIN
+										<p>[BLACK]</p>
+									</span>
+								</a>
+							</div>
+							<div class="bag-price-wrapper">
+								<div>
+									<p>₩39,000</p>
+									<p>₩-7,800</p>
+								</div>
+								<a href="#"><p>Delete</p></a>
+							</div>
+							<p>[옵션: 블랙/F]</p>
+							<div class="bag-quantity-wrapper">
+								<img src="asset/icon/quantity-down.png" alt="" />
+								<p>1</p>
+								<img src="asset/icon/quantity-up.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="checkout-wrapper">
+						<div class="total-price-wrapper">
+							<p>TOTAL</p>
+							<p>₩31,200</p>
+						</div>
+						<button class="checkout-btn"><a href="#">CHECKOUT</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="burger-menu-wrapper">
+			<ul class="burger-menu">
+				<li><a href="#">SHOP</a></li>
+				<li class="ffats"><a href="#">FFATS</a></li>
+				<li><a href="#">LOOKBOOK</a></li>
+				<li><a href="#">MADE IN HEAVEN</a></li>
+				<li><a href="#">LEGACY</a></li>
+			</ul>
+		</nav>
+
+		<main class="find-info-wrapper">
+			<p>비회원 주문 조회</p>
+			<form class="find-info-form-wrapper" action="">
+				<div class="order-check-wrapper">
+					<input type="text" placeholder="주문자명" name="order-name" />
+					<input type="text" placeholder="주문번호" name="order-number" />
+					<input
+						type="text"
+						placeholder="비회원 주문 비밀번호"
+						name="order-password"
+					/>
+				</div>
+				<button class="info-find-btn"><a href="#">주문조회</a></button>
+			</form>
+			<p>* 비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+		</main>
+
+		<footer class="footer-wrapper">
+			<a href="#"
+				><img
+					class="text-logo"
+					src="asset/img/text_logo.png"
+					alt="niceghostclub text logo"
+			/></a>
+			<ul class="footer-link-list">
+				<li><a href="#">FLAGSHIP STORE</a></li>
+				<li><a href="#">NOTICE</a></li>
+				<li><a href="#">Q&A</a></li>
+				<li><a href="#">PRIVACY POLICY</a></li>
+				<li><a href="#">TERMS OF USE</a></li>
+				<li><a href="#">STOCKIST</a></li>
+				<li><a href="#">INSTAGRAM</a></li>
+				<li><a href="#">YOUTUBE</a></li>
+				<li><a href="#">PINTEREST</a></li>
+				<li><a href="#">FACEBOOK</a></li>
+			</ul>
+			<div class="footer-info">
+				<p>
+					CEO : DOOJIN LEE | TRADE NAME : 주식회사 메디쿼터스(MEDIQUITOUS
+					Co.Ltd.) | ADDRESS : 3F JIYOUNG BUILDING, 644 NONHYEON-RO, GANGNAM-GU,
+					SEOUL, KOREA
+				</p>
+				<p>
+					BUSINESS LICENSE : 301-87-00296 MAIL ORDER LICENSE :
+					2017-서울강남-02608 | 1566-0409 (AM 10:00 - PM 17:00) | 이메일 :
+					info@niceghostclub.com
+				</p>
+			</div>
+		</footer>
+		<script type="module" src="js/script.js"></script>
+	</body>
+</html>

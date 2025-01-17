@@ -30,6 +30,12 @@
 	gap: 20px;
 }
 
+.order-check-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
 .radio-wrapper {
 	display: flex;
 	align-items: center;
@@ -42,7 +48,8 @@
 	cursor: pointer;
 }
 
-.info-input-wrapper input {
+.info-input-wrapper input,
+.order-check-wrapper input {
 	height: 40px;
 	border-bottom: 1px solid black;
 	padding: 0 10px;
