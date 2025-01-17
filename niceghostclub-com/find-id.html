@@ -158,7 +158,43 @@
 			</ul>
 		</nav>
 
-		<main class="find-id-wrapper"></main>
+		<main class="find-id-wrapper">
+			<h2>아이디 찾기</h2>
+
+			<p>인증방법</p>
+			<form class="find-id-form-wrapper" action="">
+				<div class="radio-wrapper">
+					<input type="radio" name="auth-method" id="radio-email" checked />
+					<label for="radio-email">이메일</label>
+
+					<input type="radio" name="auth-method" id="radio-number" />
+					<label for="radio-number">휴대폰번호</label>
+				</div>
+
+				<div class="info-input-wrapper">
+					<div class="name-input-wrapper">
+						<label for="">이름</label>
+						<input type="text" name="user-name" />
+					</div>
+
+					<div class="email-input-wrapper active">
+						<label for="">이메일</label>
+						<input type="email" name="user-email" />
+					</div>
+
+					<div class="number-input-wrapper">
+						<label for="">휴대폰번호</label>
+						<div class="number-input">
+							<input type="text" name="user-number" />
+							<input type="text" name="user-number" />
+							<input type="text" name="user-number" />
+						</div>
+					</div>
+				</div>
+
+				<button class="id-find-btn"><a href="#">확인</a></button>
+			</form>
+		</main>
 
 		<footer class="footer-wrapper">
 			<a href="#"
@@ -192,6 +228,6 @@
 				</p>
 			</div>
 		</footer>
-		<script src="js/script.js"></script>
+		<script type="module" src="js/script.js"></script>
 	</body>
 </html>

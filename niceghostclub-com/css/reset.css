@@ -132,7 +132,8 @@ a {
 img {
 	display: block;
 }
-input, label {
+input,
+label {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -141,4 +142,19 @@ input, label {
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
+}
+
+input[type='radio'] {
+	appearance: none;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+}
+
+input[type='radio']:checked {
+	border: 1px solid black;
+	background-color: black;
 }

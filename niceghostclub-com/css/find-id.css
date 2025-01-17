@@ -1,0 +1,85 @@
+.active {
+	display: flex !important;
+	flex-direction: column;
+}
+
+.find-id-wrapper {
+	width: 650px;
+	padding: 160px 35px 55px;
+	margin: 0 auto;
+	font-family: 'Noto Sans KR', serif;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.find-id-wrapper h2 {
+	font-size: 20px;
+	font-weight: 900;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.find-id-wrapper p {
+	padding: 14px 0;
+}
+
+.find-id-form-wrapper,
+.info-input-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.radio-wrapper {
+	display: flex;
+	align-items: center;
+	padding-bottom: 10px;
+}
+
+.radio-wrapper label {
+	margin-left: 4px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.info-input-wrapper input {
+	height: 40px;
+	border-bottom: 1px solid black;
+	padding: 0 10px;
+}
+
+.info-input-wrapper label {
+	padding-bottom: 10px;
+}
+
+.name-input-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.email-input-wrapper,
+.number-input-wrapper {
+	display: none;
+}
+
+.number-input {
+	display: flex;
+	justify-content: space-between;
+}
+
+.id-find-btn {
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+.id-find-btn a {
+	display: block;
+	width: 100%;
+	padding: 17px 0;
+}
+
+.id-find-btn a:hover {
+	text-decoration: underline;
+}
