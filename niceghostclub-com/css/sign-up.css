@@ -1,8 +1,127 @@
 .sign-up-wrapper {
-	width: 650px;
-	padding: 160px 35px 55px;
+	width: 638px;
+	padding: 160px 36px;
 	margin: 0 auto;
 	font-family: 'Noto Sans KR', serif;
 	font-size: 12px;
+	font-weight: 400;
+}
+
+.sign-up-wrapper h2 {
+	font-size: 20px;
+	font-weight: 900;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.terms-agree-form {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.agree-All-wrapper {
+	padding: 20px 16px;
+}
+
+.agree-All-wrapper p {
+	padding: 20px 0;
 	font-weight: 500;
+}
+
+.agree-checkbox-wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.agree-checkbox-wrapper label {
+	line-height: 1.5;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.terms-wrapper {
+	border: 1px solid #cccccc;
+}
+
+.terms-agree-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 14px;
+}
+
+.terms-agree-wrapper a {
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.terms-checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.terms-detail-wrapper {
+	height: 100px;
+	border-top: 1px solid #cccccc;
+	padding: 14px;
+	line-height: 1.6;
+	font-weight: 400;
+	scrollbar-width: auto;
+	overflow: auto;
+}
+
+.terms-detail-wrapper p {
+	font-weight: 500;
+}
+
+.sms-email-option-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 25%;
+	padding: 10px 14px;
+	background-color: #fafafa;
+	border-top: 1px solid #cccccc;
+	font-weight: 600;
+}
+
+.sms-checkbox-wrapper,
+.email-checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.sign-up-btn-wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	padding-top: 5px;
+	font-weight: 500;
+}
+
+.next-btn {
+	width: 50%;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+
+.cancel-btn {
+	width: 50%;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.sign-up-btn-wrapper a {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+}
+
+.sign-up-btn-wrapper a:hover {
+	text-decoration: underline;
 }
