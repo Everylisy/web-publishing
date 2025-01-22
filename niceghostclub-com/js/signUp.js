@@ -16,6 +16,7 @@ const syncCheckboxState = (arr, targetElem) => {
 
 const clickAgreeAll = (event) => {
 	syncCheckboxState(checkboxArr, event.target);
+	syncCheckboxState(smsEmailCheckboxArr, receiveInfoCheckbox);
 };
 
 const clickRecieveInfo = (event) => {
@@ -29,6 +30,14 @@ const checkIsAllAgree = (arr, targetCheckBox) => {
 
 const termsAllAgree = () => checkIsAllAgree(checkboxArr, agreeAllCheckbox);
 
+const receiveInfoAllAgree = () => {
+	checkIsAllAgree(smsEmailCheckboxArr, receiveInfoCheckbox);
+	termsAllAgree();
+};
+
 agreeAllCheckbox.addEventListener('change', clickAgreeAll);
 receiveInfoCheckbox.addEventListener('change', clickRecieveInfo);
 checkboxArr.forEach((el) => el.addEventListener('change', termsAllAgree));
+smsEmailCheckboxArr.forEach((el) =>
+	el.addEventListener('change', receiveInfoAllAgree)
+);
