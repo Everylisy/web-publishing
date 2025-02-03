@@ -49,4 +49,4 @@ shoppingBagBtn.addEventListener('click', openPopup);
 shoppingBagBtn.addEventListener('click', openShoppingBagTab);
 popupCloseBtn.addEventListener('click', closePopup);
 
-export default toggleTab;
+export { toggleTab, ACTIVE };

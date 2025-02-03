@@ -1,3 +1,5 @@
+import { ACTIVE } from './script.js';
+
 const sortBtn = document.getElementById('sort-btn');
 const sortList = document.getElementById('sort-list-wrapper');
 

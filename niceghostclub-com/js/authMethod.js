@@ -1,4 +1,4 @@
-import toggleTab from './script.js';
+import { toggleTab } from './script.js';
 
 const radioEmail = document.getElementById('radio-email');
 const radioNumber = document.getElementById('radio-number');
